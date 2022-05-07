@@ -26,21 +26,46 @@ namespace UnitTests.Tests
         }
 
         [TestMethod()]
-        public void SubTest()
+        public void TestSub()
         {
-            Assert.Fail();
+            // Assemble
+            BasicMathOperations basicMathOperation = new BasicMathOperations();
+            int expectedResult = 6;
+
+            // Act
+            int actualResult = basicMathOperation.Sub(9, 3);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
         [TestMethod()]
-        public void MultiplyTest()
+        public void TestMultiply()
         {
-            Assert.Fail();
+            // Assemble
+            BasicMathOperations basicMathOperation = new BasicMathOperations();
+            int expectedResult = 27;
+
+            // Act
+            int actualResult = basicMathOperation.Multiply(9, 3);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
         [TestMethod()]
-        public void DivideTest()
+        public void TestDivide()
         {
-            Assert.Fail();
+            // Assemble
+            BasicMathOperations basicMathOperation = new BasicMathOperations();
+            int expectedResult = 3;
+
+            // Act
+            float actualResult = basicMathOperation.Divide(9, 3);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
         }
     }
+  
 }
